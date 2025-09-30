@@ -564,23 +564,25 @@
                 </div>
             </div>
         </div>
+
+            <!-- WhatsApp Flutuante -->
+        <a href="https://wa.me/351962323123" target="_blank" class="whatsapp-float">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
     </footer>
 
-    <!-- Botão WhatsApp Flutuante (fora do #content para não ficar hidden) -->
-    <a href="https://wa.me/351962323123?text=Ol%C3%A1" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar via WhatsApp">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-    </a>
-
     <script>
-        document.addEventListener('DOMContentLoaded', function(){
-            var ld = document.getElementById('loading');
-            var ct = document.getElementById('content');
-            if(ld) ld.style.display = 'none';
-            if(ct) ct.classList.remove('hidden');
+        // Loading screen
+        window.addEventListener('load', () => {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').classList.remove('hidden');
         });
     </script>
 </body>
 </html>
+
+
 
 
 
